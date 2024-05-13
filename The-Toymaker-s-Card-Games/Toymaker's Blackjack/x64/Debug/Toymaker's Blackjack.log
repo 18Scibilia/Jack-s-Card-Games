@@ -1,0 +1,6 @@
+﻿  BlackjackGame.cpp
+C:\Users\2201877\The-Toymaker-s-Card-Games\Toymaker's Blackjack\Card.h(27,3): warning C4309: 'initializing': truncation of constant value
+C:\Users\2201877\The-Toymaker-s-Card-Games\Toymaker's Blackjack\Card.h(27,3): warning C4369: 'Card::Joker':  enumerator value '19023' cannot be represented as 'char', value is '19023'
+C:\Users\2201877\The-Toymaker-s-Card-Games\Toymaker's Blackjack\Card.h(28,3): warning C4309: 'initializing': truncation of constant value
+C:\Users\2201877\The-Toymaker-s-Card-Games\Toymaker's Blackjack\Card.h(28,3): warning C4369: 'Card::Jack':  enumerator value '19009' cannot be represented as 'char', value is '19009'
+  Toymaker's Blackjack.vcxproj -> C:\Users\2201877\The-Toymaker-s-Card-Games\x64\Debug\Toymaker's Blackjack.exe
