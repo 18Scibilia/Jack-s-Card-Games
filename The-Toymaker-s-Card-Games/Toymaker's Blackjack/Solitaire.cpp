@@ -45,9 +45,9 @@ int main()
 	
 	
 	Deck deck;  // creates deck object
-	Card currentCard;  //creates card object
-	Rules myRules; // creates rules object
-	deck.GenDeck();  // generates a deck
+	//Card currentCard;  //creates card object
+	//Rules myRules; // creates rules object
+	//deck.GenDeck();  // generates a deck
 
 	//shuffles the deck 1000 times
 	for (int i = 0; i < 1000; i++) {
