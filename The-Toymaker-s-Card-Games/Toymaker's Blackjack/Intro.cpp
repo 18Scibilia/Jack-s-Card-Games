@@ -31,17 +31,17 @@ int main() {
 		cout << "Say neither to walk away with your life." << endl;
 		cin >> response;
 
-		if (response == "Neither"||response=="neither"||response=="NEITHER")
+		if (response == "Neither"||response=="neither"||response=="NEITHER"||response=="0")
 		{
 			game_on = false;
 			cout << "Oh, that is a shame." << endl;
 			cout << "If you ever change your mind, I will be here." << endl;
 		}
-		else if (response == "Blackjack"||response == "blackjack")
+		else if (response == "Blackjack"||response == "blackjack"||response == "1")
 		{
 			cout << "Very well. We are playing blackjack." << endl;
 		}
-		else if (response == "Solitaire"||response == "solitaire")
+		else if (response == "Solitaire"||response == "solitaire"||response == "2")
 		{
 			cout << "Very well. We are playing solitaire." << endl;
 		}
