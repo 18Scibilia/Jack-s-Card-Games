@@ -5,11 +5,12 @@
 
 void Solitaire::play()
 {
-bool hear_rules = true;
-bool blackjack_game = true;
-int player_card;
-int dealer_card;
-string response;
+	bool hear_rules = true;
+	bool blackjack_game = true;
+	Player user = Player ("Doctor Who");
+	int player_card;
+	int dealer_card;
+	string response;
 
     	cout << "So, now we are playing Solitaire." << endl;
     	cout << "More specifically, classic Klondike Solitaire." << endl;
