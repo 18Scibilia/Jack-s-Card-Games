@@ -2,7 +2,7 @@
 #include "Deck.h"
 //#include "Board.h"
 #include <string>
-/*
+
 int rules()
 {
 bool hear_rules = true;
@@ -44,7 +44,7 @@ bool hear_rules = true;
 		cout << "Hope you've understood all of this. Now, let's play!" << endl;
 	}
 }
-
+/*
 int main()
 {
 	
