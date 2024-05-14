@@ -1,14 +1,14 @@
-#include "Blackjack.h"
+#include "BlackjackGame.h"
 #include "Solitaire.h"
 #include <iostream>
 #include <stdlib.h>
 
 const int spacer_length = 90;
-
+string response;
 
 
 using namespace std;
-/*
+
 int main() {
 	bool game_on = true;
 	srand(unsigned((time(NULL))));
@@ -20,30 +20,28 @@ int main() {
 	cout << "If you win, then you will be free to go as tou see fit." << endl;
 	cout << "If I win, though, you will spend the rest of eternity as my new plaything." << endl;
 	cout << "Do you accept my challenge?" << endl;
+	cin >> response;
 
-	while (game_on == true)
+	if (response == "yes")
 	{
-		int game_choice = 0;
-		//This is the menu where the player decides what to play
 		cout << "I will let you decide what we play now. Either Blackjack or Solitaire." << endl;
 		cout << "Of course, if you with to leave now, then I won't stop you." << endl;
 		cout << "Press 1 for Blackjack." << endl;
 		cout << "Press 2 for Solitaire." << endl;
-		cout << "Press 0 to walk away with your life." << endl;
+		cout << "Say neither to walk away with your life." << endl;
+		cin >> response;
 
-		game_choice = get_input(0, 2);
-
-		if (game_choice == 0)
+		if (response == "Neither"||response=="neither"||response=="NEITHER")
 		{
 			game_on = false;
 			cout << "Oh, that is a shame." << endl;
 			cout << "If you ever change your mind, I will be here." << endl;
 		}
-		else if (game_choice == 1)
+		else if (response == "Blackjack"||response == "blackjack")
 		{
 			cout << "Very well. We are playing blackjack." << endl;
 		}
-		else if (game_choice == 2)
+		else if (response == "Solitaire"||response == "solitaire")
 		{
 			cout << "Very well. We are playing solitaire." << endl;
 		}
@@ -53,7 +51,7 @@ int main() {
 		}
 	}
 }
-
+/*
 void spacer()
 {
 	for (int i = 0; i < spacer_length; i++)
