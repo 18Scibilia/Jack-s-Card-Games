@@ -39,11 +39,11 @@ void Solitaire::play()
 		cout << "Hope you've understood all of this. Now, let's play!" << endl;
 	}
 }
-/*
+
 int main()
 {
 	
-	/*
+	
 	Deck deck;  // creates deck object
 	Card currentCard;  //creates card object
 	Rules myRules; // creates rules object
@@ -53,8 +53,8 @@ int main()
 	for (int i = 0; i < 1000; i++) {
 		deck.shuffle();
 	}
-
-
+}
+/*
 	string aCard, cell1, cell2;
 	bool keepGoing = true;
 	Board myBoard;  //CREATES BOARD OBJECT
