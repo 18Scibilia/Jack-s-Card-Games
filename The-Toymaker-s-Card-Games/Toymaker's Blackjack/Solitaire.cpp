@@ -40,7 +40,7 @@ void Solitaire::play()
 	}
 }
 
-int main()
+int playSolitaire()
 {
 	
 	
