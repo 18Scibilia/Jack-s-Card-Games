@@ -7,8 +7,8 @@ int rules()
 {
 bool hear_rules = true;
 bool blackjack_game = true;
-int player_card[max_card_number];
-int dealer_card[max_card_number];
+int player_card;
+int dealer_card;
 string response;
 
     cout << "So, now we are playing Solitaire." << endl;
