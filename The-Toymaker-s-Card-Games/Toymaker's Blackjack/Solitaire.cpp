@@ -11,10 +11,9 @@ int player_card;
 int dealer_card;
 string response;
 
-    cout << "So, now we are playing Solitaire." << endl;
-    cout << "More specifically, classic Klondike Solitaire." << endl;
-    cout << "Do you wish to hear the rules?" << endl;
-    cout << "Press 1 for yes, press 0 for no." << endl;
+    	cout << "So, now we are playing Solitaire." << endl;
+    	cout << "More specifically, classic Klondike Solitaire." << endl;
+    	cout << "Do you wish to hear the rules?" << endl;
 	cin >> response;
 
     if (response == "No" || response == "no" || response == "No" || response == "Nah"||response == "no way"||response=="No way")
