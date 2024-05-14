@@ -6,8 +6,9 @@
 #pragma once
 class Solitaire
 {
-/*
 public:
+  void play();
+/*
   RectangleShape menu_box, resume, quit, new_game, score_board, start_button, blurred_page;
   Texture main_background_texture, background_texture, tryerz_texture, sound_On_texture, mute_texture, menu_texture;
   Sprite main_background, background, sound_on, mute, menu;
