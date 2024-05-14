@@ -6,28 +6,23 @@
 int rules()
 {
 bool hear_rules = true;
-    bool blackjack_game = true;
-    int player_card[max_card_number];
-    int dealer_card[max_card_number];
+bool blackjack_game = true;
+int player_card[max_card_number];
+int dealer_card[max_card_number];
+string response;
 
-    spacer();
     cout << "So, now we are playing Solitaire." << endl;
     cout << "More specifically, classic Klondike Solitaire." << endl;
     cout << "Do you wish to hear the rules?" << endl;
     cout << "Press 1 for yes, press 0 for no." << endl;
-    spacer();
-	
-	hear_rules = get_input(0, 1);
+	cin >> response;
 
-    if (hear_rules = 0)
+    if (response == "No" || response == "no" || response == "No" || response == "Nah"||response == "no way"||response=="No way")
     {
         hear_rules = false;
         cout << "You wish to just play? You are brave, aren't you?" << endl;
         cout << "With that, let us begin." << endl;
-    }
-
-	if (hear_rules = 1)
-	{
+    } else if (response == "Yes" || response == "yes" || response == "YES" || response == "Yeah" || response == "Totally" || response == "Certainly"){
 		hear_rules = true;
 		cout << "Very well. I shall explain the rules of Klondike Solitaire to you." << endl;
 		cout << "The main objective of Klondike Solitaire is to make four piles of cards in ascending order." << endl;
