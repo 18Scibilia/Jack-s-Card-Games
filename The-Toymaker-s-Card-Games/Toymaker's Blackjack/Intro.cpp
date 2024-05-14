@@ -22,7 +22,7 @@ int main() {
 	cout << "Do you accept my challenge?" << endl;
 	cin >> response;
 
-	if (response == "yes")
+	if (response == "yes"||response == "Yeah"||response == "Yes"|| response == "yeah"|| response == "Sure"|| response == "yeh")
 	{
 		cout << "I will let you decide what we play now. Either Blackjack or Solitaire." << endl;
 		cout << "Of course, if you with to leave now, then I won't stop you." << endl;
