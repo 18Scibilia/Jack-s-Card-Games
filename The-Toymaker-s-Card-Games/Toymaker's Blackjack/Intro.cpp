@@ -50,6 +50,10 @@ int main() {
 			cout << "That is not an answer. Make a different choice." << endl;
 		}
 	}
+	else if (response == "no" || response == "No") {
+		cout << "Oh, that is a shame." << endl;
+		cout << "If you ever change your mind, I will be here." << endl;
+	}
 }
 /*
 void spacer()
