@@ -3,7 +3,7 @@
 //#include "Board.h"
 #include <string>
 
-int rules()
+void Solitaire::play()
 {
 bool hear_rules = true;
 bool blackjack_game = true;
