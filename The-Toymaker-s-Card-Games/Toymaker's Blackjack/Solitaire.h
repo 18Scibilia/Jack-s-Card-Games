@@ -1,7 +1,7 @@
 //#ifndef solitaire_hpp
 //#define solitaire_hpp
 
-//#include "Outline.Pile.h"
+#include "Player.h"
 
 #pragma once
 class Solitaire
