@@ -47,6 +47,7 @@ int main() {
 		{
 			cout << "Very well. We are playing blackjack." << endl;
 			cout << "Do you wish to hear the rules?" << endl;
+			cin >> response;
 			if (response == "Yes" || response == "YES" || response == "yes" || response == "Yeah" || response == "yeah" || response == "You bet" || response == "totally") {
 				cout << "Very well. I will explain the rules of Blackjack to you now." << endl;
 				cout << "The main goal in Blackjack is to have a card total that is less than or equal to 21." << endl;
