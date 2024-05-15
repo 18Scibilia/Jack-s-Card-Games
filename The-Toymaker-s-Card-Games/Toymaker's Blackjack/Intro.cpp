@@ -58,6 +58,7 @@ int main() {
 				cout << "Oh, you wish to jumnp straight into the game?" << endl;
 				cout << "With that, let us begin." << endl;
 			}
+			
 		}
 		else if (response == "Solitaire"||response == "solitaire"||response == "2")
 		{
