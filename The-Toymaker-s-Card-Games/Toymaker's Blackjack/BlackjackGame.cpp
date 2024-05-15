@@ -124,6 +124,8 @@ void BlackjackGame::play()
 		cout << "OK, then. That is your final total of all. Jah?" << endl;
 		cout << "You may not have won Blackjack, but you still choose to leave with your life.";
 	}
+	cout << "Now that your cards have been dealt, it is my turn." << endl;
+	cout << dealer.tallyScore() << endl;
 	/*
 	while (userHits = true) {
 		user.AddCardToHand(blackjackDeck.drawCard());
