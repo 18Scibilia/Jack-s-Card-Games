@@ -46,24 +46,6 @@ int main() {
 		else if (response == "Blackjack"||response == "blackjack"||response == "1")
 		{
 			cout << "Very well. We are playing blackjack." << endl;
-			cout << "Do you wish to hear the rules?" << endl;
-			cin >> response;
-			if (response == "Yes" || response == "YES" || response == "yes" || response == "Yeah" || response == "yeah" || response == "You bet" || response == "totally") {
-				cout << "Very well. I will explain the rules of Blackjack to you now." << endl;
-				cout << "The main goal in Blackjack is to have a card total that is less than or equal to 21." << endl;
-				cout << "You start with two cards in your hand, and the card number is the total." << endl;
-				cout << "For example, if one card you have is a 10 and the other os a 5, then your total is 15." << endl;
-				cout << "If your card total is less than 21, you can choose to either stick or hit." << endl;
-				cout << "If you choose to hit, then another card will be added to your hand." << endl;
-				cout << "If your card total is 21, then you have Blackjack and you win." << endl;
-				cout << "But if your card total is over 21, then it is bust and you have lost." << endl;
-				cout << "For the record, picture cards like the Jack, Queen or King are worth 10, and Aces are worth one." << endl;
-				cout << "With that, let us begin." << endl;
-			}
-			else if (response == "No" || response == "NO" || response == "no" || response == "Nope" || response == "nope" || response == "No way") {
-				cout << "Oh, you wish to jumnp straight into the game?" << endl;
-				cout << "With that, let us begin." << endl;
-			}
 			BlackjackGame link;
 		}
 		else if (response == "Solitaire"||response == "solitaire"||response == "2")
