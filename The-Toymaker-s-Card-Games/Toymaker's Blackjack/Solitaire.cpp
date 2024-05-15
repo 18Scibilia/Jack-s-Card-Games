@@ -1,20 +1,23 @@
 #include "Solitaire.h"
+#include "SolitaireDraw.h"
 #include "Deck.h"
 //#include "Board.h"
 #include <string>
 
-void Solitaire::play()
+void Solitaire::playSolitaire()
 {
 	bool hear_rules = true;
-	bool blackjack_game = true;
+    bool blackjack_game = true;
 	Player user = Player ("Doctor Who");
-	int player_card;
-	int dealer_card;
+    string player_card, cell1, cell2;
+    string dealer_card;
 	string response;
+	Deck SolitaireDeck = Deck();
+	SolitaireDeck.shuffle();
 
-    	cout << "So, now we are playing Solitaire." << endl;
-    	cout << "More specifically, classic Klondike Solitaire." << endl;
-    	cout << "Do you wish to hear the rules?" << endl;
+    cout << "So, now we are playing Solitaire." << endl;
+    cout << "More specifically, classic Klondike Solitaire." << endl;
+    cout << "Do you wish to hear the rules?" << endl;
 	cin >> response;
 
     if (response == "No" || response == "no" || response == "No" || response == "Nah"||response == "no way"||response=="No way")
@@ -38,12 +41,35 @@ void Solitaire::play()
 		cout << "However, if you go through the stockpile with no new plays, the game is over." << endl;
 		cout << "Hope you've understood all of this. Now, let's play!" << endl;
 	}
+	bool keepGoing = true;
+	bool win = false;
+	bool fullBoard = false;
+	bool playSolitaire = true;
+	while (playSolitaire == true)
+	{
+		while (fullBoard == false) {
+			//drawCard().Outputcard();
+			//player_card = SolitaireDeck.drawCard().Outputcard();
+		}
+		while (keepGoing == true) {
+			cin >> cell1;
+			if (cell1 == "A1" || cell1 == "B1" || cell1 == "C1" || cell1 == "D1" ||
+				cell1 == "A2" || cell1 == "B2" || cell1 == "C2" || cell1 == "D2" ||
+				cell1 == "A3" || cell1 == "B3" || cell1 == "C3" || cell1 == "D3" ||
+				cell1 == "A4" || cell1 == "B4" || cell1 == "C4" || cell1 == "D4") {
+				//NOTHING HERE SO PROGRAM CAN PROCEED
+			}
+			else {
+				continue;
+			}
+		}
+	}
 }
 
-int playSolitaire()
+/*
+int game()
 {
-	
-	
+
 	Deck deck;  // creates deck object
 	//Card currentCard;  //creates card object
 	//Rules myRules; // creates rules object
@@ -54,9 +80,12 @@ int playSolitaire()
 		deck.shuffle();
 	}
 }
+*/
+
+
 /*
 	string aCard, cell1, cell2;
-	bool keepGoing = true;
+	
 	Board myBoard;  //CREATES BOARD OBJECT
 	myBoard.DrawBoard();
 	myBoard.gotoxy(95, 1);
