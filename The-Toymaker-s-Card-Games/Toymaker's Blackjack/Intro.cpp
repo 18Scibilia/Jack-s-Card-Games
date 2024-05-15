@@ -46,52 +46,12 @@ int main() {
 		else if (response == "Blackjack"||response == "blackjack"||response == "1")
 		{
 			cout << "Very well. We are playing blackjack." << endl;
-			cout << "Do you wish to hear the rules?" << endl;
-			cin >> response;
-			if (response == "Yes" || response == "YES" || response == "yes" || response == "Yeah" || response == "yeah" || response == "You bet" || response == "totally") {
-				cout << "Very well. I will explain the rules of Blackjack to you now." << endl;
-				cout << "The main goal in Blackjack is to have a card total that is less than or equal to 21." << endl;
-				cout << "You start with two cards in your hand, and the card number is the total." << endl;
-				cout << "For example, if one card you have is a 10 and the other os a 5, then your total is 15." << endl;
-				cout << "If your card total is less than 21, you can choose to either stick or hit." << endl;
-				cout << "If you choose to hit, then another card will be added to your hand." << endl;
-				cout << "If your card total is 21, then you have Blackjack and you win." << endl;
-				cout << "But if your card total is over 21, then it is bust and you have lost." << endl;
-				cout << "For the record, picture cards like the Jack, Queen or King are worth 10, and Aces are worth one." << endl;
-				cout << "With that, let us begin." << endl;
-			}
-			else if (response == "No" || response == "NO" || response == "no" || response == "Nope" || response == "nope" || response == "No way") {
-				cout << "Oh, you wish to jumnp straight into the game?" << endl;
-				cout << "With that, let us begin." << endl;
-			}
+			BlackjackGame link;
+			
 		}
 		else if (response == "Solitaire"||response == "solitaire"||response == "2")
 		{
 			cout << "Very well. We are playing solitaire." << endl;
-			cout << "More specifically, classic Klondike Solitaire." << endl;
-			cout << "Do you wish to hear the rules?" << endl;
-			cin >> response;
-
-			if (response == "No" || response == "no" || response == "No" || response == "Nah" || response == "no way" || response == "No way")
-			{
-				cout << "You wish to just play? You are brave, aren't you?" << endl;
-				cout << "With that, let us begin." << endl;
-			}
-			else if (response == "Yes" || response == "yes" || response == "YES" || response == "Yeah" || response == "Totally" || response == "Certainly") {
-				cout << "Very well. I shall explain the rules of Klondike Solitaire to you." << endl;
-				cout << "The main objective of Klondike Solitaire is to make four piles of cards in ascending order." << endl;
-				cout << "On each of the cards, you must place a card that is one lower than the card that is face up." << endl;
-				cout << "You must alternate the card colours as you go doen the line." << endl;
-				cout << "For example, a red card must be followed by a black card." << endl;
-				cout << "Remember that you can only move cards that are face up." << endl;
-				cout << "Any card that you turn over from the stockpile becomes playable in the waste pile." << endl;
-				cout << "If any of the cards that are face up at the start are aces, move them immediately into the foundation piles." << endl;
-				cout << "The cards in the tableau are arranged by colour and rank." << endl;
-				cout << "Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King. That is the card ranking from lowest to highest." << endl;
-				cout << "If you end up going through the whole stockpile, you can turn the waste pile over to reuse it." << endl;
-				cout << "However, if you go through the stockpile with no new plays, the game is over." << endl;
-				cout << "Hope you've understood all of this. Now, let's play!" << endl;
-			}
 			Solitaire link;
 		}
 		else
