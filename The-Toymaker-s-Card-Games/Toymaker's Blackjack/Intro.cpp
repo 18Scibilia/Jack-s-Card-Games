@@ -46,13 +46,13 @@ int main() {
 		else if (response == "Blackjack"||response == "blackjack"||response == "1")
 		{
 			cout << "Very well. We are playing blackjack." << endl;
-			BlackjackGame link;
+			BlackjackGame link = BlackjackGame();
 			
 		}
 		else if (response == "Solitaire"||response == "solitaire"||response == "2")
 		{
 			cout << "Very well. We are playing solitaire." << endl;
-			Solitaire link;
+			Solitaire link = Solitaire();
 		}
 		else
 		{
